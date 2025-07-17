@@ -25,7 +25,7 @@ def add_license():
     cursor.execute("INSERT INTO licenses (software, license_key, expiry_date) VALUES (?, ?, ?)",
                    (software, license_key, expiry))
     conn.commit()
-    print("✅ License added successfully!")
+    print("License added successfully!")
 
 def search_license():
     name = input("Enter software name to search: ")
